@@ -1,0 +1,30 @@
+import javax.swing.JOptionPane;
+public class moviesdemo {
+	public static void main(String args[]) {
+		movies p=new movies();
+		String a=JOptionPane.showInputDialog(null,"What movies do you want to see "
+				+ "\n Boss Baby ,"
+				+ " \n Cobra Kai "
+				+ "\n Independence Day ,"
+				+ "\n Zero Day "
+				+ "\n Trollhunter "
+				,"Movie asker",3);
+	
+		
+		if(p.getmovie(a) != a) {
+			System.exit(0);
+		}	
+		
+	String B=JOptionPane.showInputDialog(null,"How many tickets can you buy","ticket Asker",3);
+	
+	Double ti=Double.parseDouble(B);
+	Double d =0.0;
+	if(p.getmovie(a) == a) {
+		d=p.finalticket(ti);
+	}
+	
+		
+	JOptionPane.showMessageDialog(null, p.getmovie(a)+" is the movie you will watch \n You have "+ p.getticket(B) + " tickets "+ "\n Your final cost is"+d );
+
+}
+}
