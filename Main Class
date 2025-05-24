@@ -1,0 +1,49 @@
+public class movies{
+	public String getmovie(String a) {
+		switch (a) {
+		
+		case"Boss Baby":{
+			System.out.println("Boss baby is a great choice");
+			break;
+		}
+			
+		case"Cobra Kai":{
+			System.out.println("Cobra Kai is great choice");
+			break;
+		}
+		case"Independence Day":{
+			System.out.println("Independence Day is great choice");	
+			break;
+		}
+			
+		case"Trollhunter":{
+			System.out.println("Trollhunter is great choice");	
+			break;
+		}
+		
+		case"Zero Day":{
+			System.out.println("Zero Day is great choice");	
+			break;
+		}
+			
+		default:{
+			a="That is not in this movie theater you stupid";
+			break;
+		}
+		}
+		
+		return a;
+			
+	}
+	
+	public String  getticket(String b) {
+		return b+" is a lot";
+	}
+	
+	public Double finalticket(double b) {
+		double a=b*6.5*1.0625;
+		return a;
+	}
+	
+	
+}
